@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+ <link rel="stylesheet" href="./static/style.css">
+  
+
+<title>Hello! Welcome to Analytica Island!</title>
+
+<script type="text/javascript" src="./static/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<body>
+<h1>Hello! Welcome to Analytica Island! <br> <br>
+ <iframe src="https://giphy.com/embed/3o7qE2W20GvuyCHQe4" width="400" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/topshelfrecords-clique-top-shelf-records-3o7qE2W20GvuyCHQe4"></a></p> <br>
+Grab a pina colada and search the SSSL database! <br><br>
+<iframe src="https://giphy.com/embed/3o6Mb7fMVXCJ7nSV8c" width="500" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/season-17-the-simpsons-17x19-3o6Mb7fMVXCJ7nSV8c"></a></p>
+</h1>
+
+<p> Search a keyword: </p>
+<input type="text" id="inputBox" style="width:250px" vertical-align='top'>
+<br>
+<br>
+
+<!-- This is the submit button that triggers the function to interact with python -->
+<button vertical-align='top' onclick="send_js(document.getElementById('inputBox').value)" align='left'>Submit</button>
+<br>
+
+<p>Result:</p>
+<p id='ans'> </p>
+
+<br>
+<br>
+<p> Results Map: </p> <br>
+<iframe class="map", src="/getmap" width="1100" height="600"></iframe>
+<br>
+<br>
+</body>
